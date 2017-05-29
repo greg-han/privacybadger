@@ -713,10 +713,6 @@ Badger.prototype = {
     chrome.browserAction.setTitle({tabId: tab.id, title: "Privacy Badger"});
   },
 
-  getFrameData: function(tabId, frameId){
-    return webrequest.getFrameData(tabId, frameId);
-  }
-
 };
 
 /**************************** Listeners ****************************/
