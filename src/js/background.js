@@ -523,14 +523,9 @@ Badger.prototype = {
     }
   },
 
-  /**
-   * Get Supercookie data from storage
-   * @returns {*|{}} Dict with Supercookie domains
-   */
-  getSupercookieDomains: function() {
-    return this.storage.getBadgerStorageObject('supercookie_domains');
+  getSettings: function() {
+    return this.storage.getBadgerStorageObject('settings_map');
   },
-  getSettings: function(){ return this.storage.getBadgerStorageObject('settings_map'); },
 
   /**
    * Check if privacy badger is enabled, take an origin and
